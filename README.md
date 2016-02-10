@@ -3,12 +3,14 @@
 *Access to Node.js Command Line Flags*
 ---------------------------------------------
 
-**Require Node 4+**
+***Require Node 4+***
 
-**How To**
+**How To:**
 
 *install the module:*
-`$ npm install node-flags`
+```bash
+$ npm install node-flags
+```
 
 *import it:*
 ```javascript
