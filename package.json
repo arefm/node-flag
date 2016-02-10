@@ -1,5 +1,5 @@
 {
-  "name": "node-flags",
+  "name": "node-flag",
   "version": "1.0.0",
   "description": "manage nodejs command line flags",
   "main": "index.js",

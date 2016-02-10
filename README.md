@@ -1,4 +1,4 @@
-**NODE-FLAGS**
+**NODE-FLAG**
 ==============
 *Access to Node.js Command Line Flags*
 ---------------------------------------------
@@ -9,12 +9,12 @@
 
 *install the module:*
 ```bash
-$ npm install node-flags
+$ npm install node-flag
 ```
 
 *import it:*
 ```javascript
-const nodeFlags = require('node-flags')
+const nodeFlags = require('node-flag')
 ``` 
 
 *use it:*
