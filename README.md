@@ -45,7 +45,7 @@ $ node app.js -h 127.0.0.1 -p 3000
 
 'use strict'
 
-const nodeFlags = require('node-flags')
+const nodeFlags = require('node-flag')
 
 // get all command line flags
 console.log(nodeFlags.getAll())
