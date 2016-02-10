@@ -68,6 +68,7 @@ console.log(nodeFlags.get('p') // result: 3000
 ```
 
 **Only Get Valid/Required Flags:**
+
 *if you want to filter ```getAll()``` or ```get()``` results with your valid/required flags just use ```validFlags()``` method before of them.*
 ```javascript
 nodeFlags.validFlags('host')
