@@ -3,7 +3,7 @@
 *Access to Node.js Command Line Flags*
 ---------------------------------------------
 
-**Required Node 4+ **
+**Require Node 4+**
 
 **How To**
 
