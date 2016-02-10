@@ -35,7 +35,10 @@ $ node app.js --host 127.0.0.1 --port 3000
 $ node app.js -h 127.0.0.1 -p 3000
 
 # NOTE:
-# if you use single dash (-) as flag title prefix you can only set 1 character length flag title like -h but if you want to set more than 1 character length flag title you have to set double dashes (--) as flag title prefix like --host  
+# if you use single dash (-) as flag title prefix 
+# you can only set 1 character length flag title like -h but 
+# if you want to set more than 1 character length flag title 
+# you have to set double dashes (--) as flag title prefix like --host  
 ```
 ```javascript
 // in your application:
