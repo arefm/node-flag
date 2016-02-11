@@ -1,6 +1,6 @@
 {
     "name": "node-flag",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "access to nodejs command line flags",
     "main": "index.js",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/arefm/node-flags.git"
+        "url": "git+https://github.com/arefm/node-flag.git"
     },
     "keywords": [
         "nodejs",
