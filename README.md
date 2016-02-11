@@ -77,6 +77,20 @@ nodeFlags.validFlags('host')
 nodeFlags.validFlags(['host', 'port', 'h', 'p'])
 ```
 
+**Assigning Flag Titles:**
+```bash
+$ node app.js -h 127.0.0.1 -p 3000
+```
+```javascript
+nodeFlags.assign({
+	h: 'host',
+	p: 'port'
+})
+
+console.log(nodeFlags.get('host')) 
+// result: '127.0.0.1'
+```
+
 ** **
 ***THIS IS JUST A SIMPLE WEEKEND PROJECT!***
 

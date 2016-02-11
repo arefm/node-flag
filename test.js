@@ -3,7 +3,13 @@
 const nodeFlags = require('./index')
 
 //set valid flags
-// nodeFlags.validFlags(['port', 'host'])
+// nodeFlags.validFlags(['port'])
+
+//assign
+nodeFlags.assign({
+    h: 'host',
+    p: 'port'
+})
 
 //get all flags
 console.log(nodeFlags.getAll())

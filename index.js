@@ -1,3 +1,11 @@
+/**
+ * NODE-FLAG: Access to Node.js Command Line Flags
+ * v1.0.5
+ * npm: npmjs.org/arefm/node-flag
+ * github: github.com/arefm/node-flag
+ * author: Aref Mirhosseini <code@arefmirhosseini.com> (http://arefmirhosseini.com)
+ */
+
 'use strict'
 
 const path = require('path'),
@@ -49,6 +57,26 @@ module.exports = {
                 }
             }
             return Object.keys(args).length ? args : null;
+        }
+    },
+    assign: (obj) => {
+        let objType = Object.prototype.toString.call(obj).match(/\ [A-Z]{1}[a-z]+/g)[0].trim().toLowerCase()
+        if (objType === 'object' && Object.keys(obj).length > 0) {
+            for (let key in obj) {
+                if (validFlags.length) {
+                    if (validFlags.indexOf(key) > -1 || validFlags.indexOf(obj[key]) > -1) {
+                        if (args[key]) {
+                            args[obj[key]] = args[key];
+                            delete args[key];
+                        }
+                    }
+                } else {
+                    if (args[key]) {
+                        args[obj[key]] = args[key];
+                        delete args[key];
+                    }
+                }
+            }
         }
     }
 }
