@@ -22,8 +22,9 @@ const nodeFlags = require('node-flag')
 // get all command line flags
 console.log(nodeFlags.getAll())
 
-// get single command line flag
-console.log(nodeFlags.get(/**[FLAG_TITLE]**/)) // if you don't set the flag title; all flags will be retured.
+// get single (or all) command line flag
+console.log(nodeFlags.get(/**[FLAG_TITLE]**/)) 
+// if you don't set the flag title; all flags will be retured.
 ```
 
 *example:*

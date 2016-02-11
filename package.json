@@ -1,6 +1,6 @@
 {
     "name": "node-flag",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "access to nodejs command line flags",
     "main": "index.js",
     "scripts": {
