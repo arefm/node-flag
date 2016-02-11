@@ -23,7 +23,7 @@ const nodeFlags = require('node-flag')
 console.log(nodeFlags.getAll())
 
 // get single command line flag
-console.log(nodeFlags.get(/**[FLAG_TITLE]**/))
+console.log(nodeFlags.get(/**[FLAG_TITLE]**/)) // if you don't set the flag title; all flags will be retured.
 ```
 
 *example:*
@@ -79,4 +79,4 @@ nodeFlags.validFlags(['host', 'port', 'h', 'p'])
 ** **
 ***THIS IS JUST A SIMPLE WEEKEND PROJECT!***
 
-***[Arefmirhosseini.com](http://arefmirhosseini.com)***
+***[arefmirhosseini.com](http://arefmirhosseini.com)***

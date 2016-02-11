@@ -1,29 +1,29 @@
 {
-  "name": "node-flag",
-  "version": "1.0.1",
-  "description": "manage nodejs command line flags",
-  "main": "index.js",
-  "scripts": {
-    "test": "node index.js --host 127.0.0.1 -p 3000"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arefm/node-flags.git"
-  },
-  "keywords": [
-    "nodejs",
-    "node",
-    "commad-line",
-    "commandline",
-    "command",
-    "line",
-    "flag",
-    "flags"
-  ],
-  "author": "Aref Mirhosseini <code@arefmirhosseini.com> (http://arefmirhosseini.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/arefm/node-flags/issues"
-  },
-  "homepage": "https://github.com/arefm/node-flags#readme"
+    "name": "node-flag",
+    "version": "1.0.2",
+    "description": "access to nodejs command line flags",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index.js --host 127.0.0.1 -p 3000"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arefm/node-flags.git"
+    },
+    "keywords": [
+        "nodejs",
+        "node",
+        "commad-line",
+        "commandline",
+        "command",
+        "line",
+        "flag",
+        "flags"
+    ],
+    "author": "Aref Mirhosseini <code@arefmirhosseini.com> (http://arefmirhosseini.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/arefm/node-flags/issues"
+    },
+    "homepage": "https://github.com/arefm/node-flags#readme"
 }
