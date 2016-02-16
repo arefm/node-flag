@@ -19,6 +19,9 @@ const nodeFlags = require('node-flag')
 
 *use it:*
 ```javascript
+// check if flag is set or not
+console.log(nodeFlags.isset(/**[FLAG_TITLE]**/)) //returns boolean value
+
 // get all command line flags
 console.log(nodeFlags.getAll())
 
