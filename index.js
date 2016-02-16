@@ -11,7 +11,8 @@
 const path = require('path'),
     cmdArgs = process.argv,
     validArgsPerfixesRegExp = new RegExp('^(\-\-.+|\-.{1})', 'g'),
-    args = {}
+    args = {},
+    argKeys = [];
 
 cmdArgs.forEach((arg, idx) => {
     if (path.parse(arg).dir) return
@@ -22,6 +23,7 @@ cmdArgs.forEach((arg, idx) => {
             arg: isTitle[0].replace(/^(\-)/g, '').replace(/^(\-)/g, ''),
             val: cmdArgs[idx + 1] && !cmdArgs[idx + 1].match(validArgsPerfixesRegExp) ? cmdArgs[idx + 1] : null
         }
+        if (newArg.arg && argKeys.indexOf(newArg.arg) < 0) argKeys.push(newArg.arg); 
         if (newArg.val) args[newArg.arg] = newArg.val
     }
 })
@@ -35,6 +37,9 @@ module.exports = {
             if (argsType === 'string') args = [args]
             validFlags = args
         }
+    },
+    isset: (arg) => {
+        return (arg && argKeys.indexOf(arg) > -1);
     },
     getAll: () => {
         for (let arg in args) {
